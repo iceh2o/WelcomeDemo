@@ -1,0 +1,25 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <th:block th:fragment="header-css">
+        <!-- this is header-css -->
+        <link rel="stylesheet" type="text/css"
+              href="webjars/bootstrap/4.2.1/css/bootstrap.min.css" />
+
+        <link rel="stylesheet" th:href="@{/css/main.css}"
+              href="../../css/main.css" />
+    </th:block>
+</head>
+<body>
+<div th:fragment="header">
+    <!-- this is header -->
+    <nav class="navbar navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" th:href="@{/}">This demo is powered by JBoss EAP 7.1, Spring Boot & Thymeleaf</a>
+            </div>
+        </div>
+    </nav>
+</div>
+
+</body>
+</html>
