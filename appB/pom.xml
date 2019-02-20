@@ -34,7 +34,7 @@
                                     <artifactId>appB</artifactId>
                                     <version>1.0</version>
                                     <type>war</type>
-                                    <outputDirectory>..</outputDirectory>
+                                    <outputDirectory>/wildfly/standalone/deployments</outputDirectory>
                                     <destFileName>appB.war</destFileName>
                                 </artifactItem>
                             </artifactItems>
