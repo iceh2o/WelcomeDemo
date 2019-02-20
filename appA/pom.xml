@@ -33,7 +33,7 @@
                                     <artifactId>appA</artifactId>
                                     <version>1.0</version>
                                     <type>war</type>
-                                    <outputDirectory>/wildfly/standalone/deployments</outputDirectory>
+                                    <outputDirectory>${env.APPSERVER_HOT_DEPLOYMENT_PATH}</outputDirectory>
                                     <destFileName>appA.war</destFileName>
                                 </artifactItem>
                             </artifactItems>
