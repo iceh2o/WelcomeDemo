@@ -1,4 +1,4 @@
-package com.mufg.tbcc.WelcomeDemo;
+package com.mufg.tbcc.appA;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
