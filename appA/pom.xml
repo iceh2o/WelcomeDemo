@@ -10,10 +10,38 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>appA</artifactId>
-
+    <version>1.0</version>
     <packaging>war</packaging>
     <build>
         <finalName>appA</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <version>3.1.1</version>
+                <executions>
+                    <execution>
+                        <id>copy</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>copy</goal>
+                        </goals>
+                        <configuration>
+                            <artifactItems>
+                                <artifactItem>
+                                    <groupId>com.mufg.tbcc</groupId>
+                                    <artifactId>appA</artifactId>
+                                    <version>1.0</version>
+                                    <type>war</type>
+                                    <outputDirectory>/wildfly/standalone/deployments</outputDirectory>
+                                    <destFileName>appA.war</destFileName>
+                                </artifactItem>
+                            </artifactItems>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
     </build>
 
 </project>
